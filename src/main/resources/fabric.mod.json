@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "localhost",
+  "version": "${version}",
+  "name": "LocalHost Companion",
+  "description": "Host a Minecraft server from your own PC with /lstart and custom pause menu invites!",
+  "authors": [
+    "Nn.club"
+  ],
+  "contact": {
+    "homepage": "https://github.com"
+  },
+  "license": "MIT",
+  "icon": "assets/localhost/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.localhost.LocalHostMod"
+    ]
+  },
+  "mixins": [
+    "localhost.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
